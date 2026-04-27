@@ -1,0 +1,58 @@
+# 🔍 Regras de Validação
+
+## 📄 CPF
+
+A validação de CPF segue as regras oficiais:
+
+1. O CPF deve conter **11 dígitos numéricos**
+2. Remoção de caracteres especiais (pontos e traço)
+3. Não pode conter todos os dígitos iguais (ex: 11111111111)
+
+### ✔ Cálculo do 1º dígito verificador:
+
+* Multiplica-se os 9 primeiros dígitos por pesos decrescentes de 10 até 2
+* Soma-se os resultados
+* Calcula-se o resto da divisão por 11
+* Se o resto for menor que 2, o dígito é 0; caso contrário, 11 - resto
+
+### ✔ Cálculo do 2º dígito verificador:
+
+* Mesmo processo, agora com os 10 primeiros dígitos
+* Pesos de 11 até 2
+
+---
+
+## 🌐 Endereço IP (IPv4)
+
+Regras aplicadas:
+
+1. Deve conter **4 blocos separados por ponto**
+2. Cada bloco deve ser um número entre **0 e 255**
+3. Não pode conter letras ou caracteres especiais
+
+Exemplo válido:
+192.168.0.1
+
+Exemplo inválido:
+256.100.50.1
+
+---
+
+## 🔐 Senha
+
+Critérios de validação:
+
+1. Mínimo de **8 caracteres**
+2. Deve conter pelo menos:
+
+   * 1 letra maiúscula
+   * 1 letra minúscula
+   * 1 número
+   * 1 caractere especial
+3. Não pode conter espaços
+
+Exemplo válido:
+Senha@123
+
+Exemplo inválido:
+senha123
