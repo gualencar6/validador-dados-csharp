@@ -10,7 +10,6 @@ Projeto desenvolvido em C# com o objetivo de validar diferentes tipos de dados, 
 
 * C#
 * .NET
-* Console Application (ou API, se você já fez)
 
 ## 📌 Funcionalidades
 
